@@ -6,11 +6,11 @@ void principal(){
   Wserver.send(200, "text/html", pagina);
 }
 
-void erro(){
+void inicio(){
   String  pagina = ""
   "<!DOCTYPE html>"
-  "<html><head><title>DEU RUIM</title></head>"
-  "<body><h1> P U T Z</h1></body></html>";
+  "<html><head><title>Bem vindo</title></head>"
+  "<body><h1>Ex de captive portal</h1></body></html>";
   Wserver.send(200, "text/html", pagina);
 }
 

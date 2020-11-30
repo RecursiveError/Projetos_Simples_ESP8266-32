@@ -10,7 +10,7 @@
 
 //paginass
 void principal();
-void erro();
+void inicio();
 void hello();
 
 const byte DNS_PORT = 53;// porta do servidor DNS
@@ -30,7 +30,7 @@ void setup() {
 //Veja o ESP8266WebServer para ver exemplos
   Wserver.on("/", principal);
   Wserver.on("/hello", hello);
-  Wserver.onNotFound(erro);
+  Wserver.onNotFound(inicio);
   Wserver.begin();
   delay(10);
   
